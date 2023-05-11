@@ -3,7 +3,7 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Bootcamp HTML Template | Homepage</title>
+      <title>Bootcamp HTML Template | Contact</title>
       <!-- Stylesheets -->
       <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
       <link href="{% static 'css/main.css' %}" rel="stylesheet">
@@ -18,30 +18,33 @@
       <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
    </head>
    <body>
+      <div class="page-wrapper">
+         <!-- Preloader -->
+         <div class="preloader"></div>
     {% block content %}
 
     {% endblock %}
-</div>
-<!--End pagewrapper-->
-<!--Scroll to top-->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
-<script src="{% static 'js/jquery.js' %}"></script>
-<script src="{% static 'js/popper.min.js' %}"></script>
-<script src="{% static 'js/jquery.scrollTo.js' %}"></script>
-<script src="{% static 'js/bootstrap.min.js' %}"></script>
-<script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-<script src="{% static 'js/jquery.fancybox.js' %}"></script>
-<script src="{% static 'js/appear.js' %}"></script>
-<script src="{% static 'js/swiper.min.js' %}"></script>
-<script src="{% static 'js/element-in-view.js' %}"></script>
-<script src="{% static 'js/jquery.paroller.min.js' %}"></script>
-<script src="{% static 'js/parallax.min.js' %}"></script>
-<script src="{% static 'js/tilt.jquery.min.js' %}"></script>
-<!--Master Slider-->
-<script src="{% static 'js/jquery.easing.min.js' %}"></script>
-<script src="{% static 'js/owl.js' %}"></script>
-<script src="{% static 'js/wow.js' %}"></script>
-<script src="{% static 'js/jquery-ui.js' %}"></script>
-<script src="{% static 'js/script.js' %}"></script>
-</body>
+      <!--End pagewrapper-->
+      <!--Scroll to top-->
+      <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-circle-up"></span></div>
+      <script src="{% static 'js/jquery.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/jquery.scrollTo.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+      <script src="{% static 'js/appear.js' %}"></script>
+      <script src="{% static 'js/swiper.min.js' %}"></script>
+      <script src="{% static 'js/element-in-view.js' %}"></script>
+      <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+      <script src="{% static 'js/validate.js' %}"></script>
+      <script src="{% static 'js/parallax.min.js' %}"></script>
+      <script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+      <!--Master Slider-->
+      <script src="{% static 'js/jquery.easing.min.js' %}"></script>
+      <script src="{% static 'js/owl.js' %}"></script>
+      <script src="{% static 'js/wow.js' %}"></script>
+      <script src="{% static 'js/jquery-ui.js' %}"></script>
+      <script src="{% static 'js/script.js' %}"></script>
+   </body>
 </html>

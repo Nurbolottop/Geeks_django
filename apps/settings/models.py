@@ -41,3 +41,22 @@ class Setting(models.Model):
         verbose_name = "Настройки"
         verbose_name_plural = "Настройка"
         
+class About(models.Model):
+    image = models.ImageField(
+        upload_to="about_image",
+        verbose_name="Фотография"
+    )
+    title = models.CharField(
+        max_length=255,
+        verbose_name="Название"
+    )
+    decriptions = models.TextField(
+        verbose_name="Описание"
+    )
+    
+    def __str__(self):
+        return self.title
+    
+    class Meta:
+        verbose_name = "О нас"
+        verbose_name_plural = "О нас"

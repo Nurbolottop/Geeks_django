@@ -15,9 +15,9 @@
 <div class="footer-column col-lg-7 col-md-6 col-sm-12">
 <div class="footer-widget logo-widget">
 <div class="logo">
-<a href="index.html"><img src="{% static 'images/footer-logo.png' %}" alt="" /></a>
+<a href="{% url 'index' %}"><img src="{{setting.logo.url}}" width = "150px" alt="" /></a>
 </div>
-<div class="text">Replenish him third creature and meat blessed void a fruit gathered you’re, they’re two waters own morning gathered greater.</div>
+<div class="text">{{setting.descriptions}}</div>
 <div class="social-box">
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-instagram"></a>

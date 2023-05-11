@@ -8,8 +8,8 @@
              <div class="top-left pull-left clearfix">
                 <!-- Info List -->
                 <ul class="info-list">
-                   <li><span>Call Us:</span><a href="tel:+123-456-7890"> +1 (800) 123-4567</a></li>
-                   <li><span>Email Us:</span><a href="mailto:info@yourcompany.com"> info@yourcompany.com</a></li>
+                   <li><span>Связаться:</span><a href="tel:{{setting.phone}}"> {{setting.phone}}</a></li>
+                   <li><span>Почта:</span><a href="mailto:{{setting.email}}"> {{setting.email}}</a></li>
                 </ul>
              </div>
              <!-- Top Right -->
@@ -28,7 +28,7 @@
        <div class="auto-container">
           <div class="clearfix">
              <div class="pull-left logo-box">
-                <div class="logo"><a href="index.html"><img src="{{setting.logo.url}}" width = "80px"alt="" title="Bootcamp"></a></div>
+                <div class="logo"><a href="{% url 'index' %}"><img src="{{setting.logo.url}}" width = "80px"alt="" title="Bootcamp"></a></div>
              </div>
              <div class="nav-outer clearfix">
                 <!--Mobile Navigation Toggler-->
@@ -45,25 +45,10 @@
                    <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                       <ul class="navigation clearfix">
                          <li class="current dropdown">
-                            <a href="#">Home</a>
-                            <ul>
-                               <li><a href="index.html">Home Page 01</a></li>
-                               <li><a href="index-2.html">Home Page 02</a></li>
-                               <li><a href="index-3.html">Home Page 03</a></li>
-                            </ul>
+                            <a href="{% url 'index' %}">Главная страница</a>
                          </li>
                          <li class="dropdown">
-                            <a href="#">Pages</a>
-                            <ul>
-                               <li><a href="price.html">Pricing</a></li>
-                               <li><a href="login.html">Login</a></li>
-                               <li><a href="register.html">Register</a></li>
-                               <li><a href="privacy.html">Privacy Policy</a></li>
-                               <li><a href="comming-soon.html">Coming Soon</a></li>
-                            </ul>
-                         </li>
-                         <li class="dropdown">
-                            <a href="#">Courses</a>
+                            <a href="#">Курсы</a>
                             <ul>
                                <li><a href="course.html">Courses As Grid</a></li>
                                <li><a href="course-list.html">Courses As List</a></li>
@@ -73,14 +58,7 @@
                             </ul>
                          </li>
                          <li class="dropdown">
-                            <a href="#">Books</a>
-                            <ul>
-                               <li><a href="books.html">Books</a></li>
-                               <li><a href="books-detail.html">Book Detail</a></li>
-                            </ul>
-                         </li>
-                         <li class="dropdown">
-                            <a href="#">Profiles</a>
+                            <a href="#">Профиль</a>
                             <ul>
                                <li><a href="intro-profile.html">Instructor Profile</a></li>
                                <li><a href="student-profile.html">Student Profile</a></li>
@@ -88,14 +66,14 @@
                             </ul>
                          </li>
                          <li class="dropdown">
-                            <a href="#">Blog</a>
+                            <a href="#">Новости</a>
                             <ul>
                                <li><a href="blog.html">Blog</a></li>
                                <li><a href="blog-detail.html">Blog Detail</a></li>
                                <li><a href="error.html">Not Found / 404</a></li>
                             </ul>
                          </li>
-                         <li><a href="contact.html">Contact Us</a></li>
+                         <li><a href="{% url 'contact' %}">Связаться</a></li>
                       </ul>
                    </div>
                 </nav>
